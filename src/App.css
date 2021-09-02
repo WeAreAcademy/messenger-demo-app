@@ -24,6 +24,10 @@
   color: white;
 }
 
+.text {
+  background: red;
+}
+
 .App-link {
   color: #61dafb;
 }

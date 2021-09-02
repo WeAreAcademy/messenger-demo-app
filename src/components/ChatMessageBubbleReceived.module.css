@@ -1,0 +1,12 @@
+.message {
+  background: #f4f4f8;
+  color: black;
+  border-radius: 24px;
+  padding: 16px;
+  margin-right: 80px;
+  margin-bottom: 16px;
+}
+
+.text {
+  margin: 0;
+}
