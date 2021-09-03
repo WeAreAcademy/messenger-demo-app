@@ -4,15 +4,13 @@ import { MessageI } from '../types/MessageI';
 
 type Props = {
   userId: string;
-  setMessages: React.Dispatch<React.SetStateAction<MessageI[]>>;
 };
 
-export default function ChatInput({ setMessages, userId }: Props) {
+export default function ChatInput({ userId }: Props) {
   const [text, setText] = useState("");
   const [buttonText, setButtonText] = useState("Send");
 
   const handleSend = () => {
-    setMessages((prevState) => [...prevState, { text, userId }]);
     setText("");
   };
 
