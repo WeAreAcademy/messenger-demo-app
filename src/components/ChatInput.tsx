@@ -8,7 +8,6 @@ type Props = {
 
 export default function ChatInput({ userId }: Props) {
   const [text, setText] = useState("");
-  const [buttonText, setButtonText] = useState("Send");
 
   const handleSend = () => {
     setText("");
@@ -41,14 +40,7 @@ export default function ChatInput({ userId }: Props) {
         }}
       />
 
-      <button
-        onClick={handleSend}
-        onMouseOver={() => {
-          setButtonText("Are you sure?");
-        }}
-      >
-        {buttonText}
-      </button>
+      <button onClick={handleSend}>Send</button>
     </div>
   );
 }
